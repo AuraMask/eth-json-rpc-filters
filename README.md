@@ -1,15 +1,14 @@
-# eth-json-rpc-filters
+# irc-json-rpc-filters
 
-[json-rpc-engine](https://github.com/kumavis/json-rpc-engine) middleware implementing ethereum filter methods.
-Backed by an [eth-block-tracker](https://github.com/MetaMask/eth-block-tracker) and web3 provider interface (`web3.currentProvider`).
+Backed by an [irc-block-tracker](https://github.com/AuraMask/irc-block-tracker) and webu provider interface (`webu.currentProvider`).
 
 ### supported rpc methods
-- `eth_newFilter`
-- `eth_newBlockFilter`
-- `eth_newPendingTransactionFilter`
-- `eth_uninstallFilter`
-- `eth_getFilterChanges`
-- `eth_getFilterLogs`
+- `irc_newFilter`
+- `irc_newBlockFilter`
+- `irc_newPendingTransactionFilter`
+- `irc_uninstallFilter`
+- `irc_getFilterChanges`
+- `irc_getFilterLogs`
 
 ### usage
 
@@ -24,9 +23,3 @@ cleanup:
 // remove blockTracker handler to free middleware for garbage collection
 filterMiddleware.destroy()
 ```
-
-### Changelog
-
-##### 2.0
-
-- expect EthBlockTracker@4

@@ -1,8 +1,8 @@
 {
-  "eth_newFilter-req": {
+  "irc_newFilter-req": {
     "jsonrpc": "2.0",
     "id": 7,
-    "method": "eth_newFilter",
+    "method": "irc_newFilter",
     "params": [
       {
         "topics": [
@@ -16,7 +16,7 @@
       }
     ]
   },
-  "eth_getLogs-res": {
+  "irc_getLogs-res": {
     "id": 2686236096630,
     "jsonrpc": "2.0",
     "result": [

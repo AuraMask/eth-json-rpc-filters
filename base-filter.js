@@ -1,35 +1,35 @@
 class BaseFilter {
 
-  constructor () {
-    this.updates = []
-    this.allResults = []
+  constructor() {
+    this.updates = [];
+    this.allResults = [];
   }
 
-  async initialize () {}
+  async initialize() {}
 
-  async update () {
-    throw new Error('BaseFilter - no update method specified')
+  static async update() {
+    throw new Error('BaseFilter - no update method specified');
   }
 
-  addResults (newResults) {
-    this.updates = this.updates.concat(newResults)
-    this.allResults = this.allResults.concat(newResults)
+  addResults(newResults) {
+    this.updates = this.updates.concat(newResults);
+    this.allResults = this.allResults.concat(newResults);
   }
 
-  addInitialResults (newResults) {
-    this.allResults = this.allResults.concat(newResults)
+  addInitialResults(newResults) {
+    this.allResults = this.allResults.concat(newResults);
   }
 
-  getChangesAndClear () {
-    const updates = this.updates
-    this.updates = []
-    return updates
+  getChangesAndClear() {
+    const updates = this.updates;
+    this.updates = [];
+    return updates;
   }
 
-  getAllResults () {
-    return this.allResults
+  getAllResults() {
+    return this.allResults;
   }
 
 }
 
-module.exports = BaseFilter
+module.exports = BaseFilter;

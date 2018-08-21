@@ -1,36 +1,37 @@
 {
-  "name": "eth-json-rpc-filters",
-  "version": "2.1.1",
-  "description": "[json-rpc-engine](https://github.com/kumavis/json-rpc-engine) middleware implementing ethereum filter methods. Backed by an [eth-block-tracker](https://github.com/MetaMask/eth-block-tracker) and web3 provider interface (`web3.currentProvider`).",
+  "name": "irc-json-rpc-filters",
+  "version": "0.0.1",
+  "description": "Backed by an [irc-block-tracker] and webu provider interface.",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
-  "author": "",
+  "author": "ldcc <contact@irchain.io>",
   "license": "ISC",
   "dependencies": {
     "await-semaphore": "^0.1.1",
-    "ethjs-query": "^0.3.6",
+    "irc.js": "/home/ldc/repos/go-irchain/src/github.com/irtools/ircjs",
     "json-rpc-engine": "^3.4.0",
     "lodash.flatmap": "^4.5.0",
-    "eth-json-rpc-middleware": "^1.6.0"
+    "irc-json-rpc-middleware": "^0.0.1"
   },
   "devDependencies": {
+    "irc-block-tracker": "^0.0.3",
+    "icjs-util": "^0.0.1",
     "deep-clone": "^3.0.2",
-    "eth-block-tracker": "^4.0.1",
-    "ganache-core": "^2.1.0",
     "pify": "^3.0.0",
     "tape": "^4.8.0"
   },
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kumavis/eth-json-rpc-filters.git"
+    "url": "git+https://github.com/AuraMask/irc-json-rpc-filters.git"
   },
   "bugs": {
-    "url": "https://github.com/kumavis/eth-json-rpc-filters/issues"
+    "url": "https://github.com/AuraMask/irc-json-rpc-filters/issues"
   },
-  "homepage": "https://github.com/kumavis/eth-json-rpc-filters#readme"
+  "homepage": "https://github.com/AuraMask/irc-json-rpc-filters#readme",
+  "keywords": [
+    "irchain",
+    "filter"
+  ]
 }
