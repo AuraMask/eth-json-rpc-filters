@@ -1,6 +1,6 @@
 {
   "name": "irc-json-rpc-filters",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Backed by an [irc-block-tracker] and webu provider interface.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "await-semaphore": "^0.1.1",
-    "irc.js": "/home/ldc/repos/go-irchain/src/github.com/irtools/ircjs",
+    "irc.js": "git+https://github.com/ldcc/ircjs.git",
     "json-rpc-engine": "^3.4.0",
     "lodash.flatmap": "^4.5.0",
     "irc-json-rpc-middleware": "^0.0.1"
