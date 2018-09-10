@@ -1,4 +1,4 @@
-# irc-json-rpc-filters
+# irc-json-rpc-filters [![CircleCI](https://circleci.com/gh/AuraMask/irc-json-rpc-filters.svg?style=svg)](https://circleci.com/gh/AuraMask/irc-json-rpc-filters)
 
 Backed by an [irc-block-tracker](https://github.com/AuraMask/irc-block-tracker) and webu provider interface (`webu.currentProvider`).
 
